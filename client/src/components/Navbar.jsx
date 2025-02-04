@@ -366,6 +366,7 @@ export function Component() {
           >
             Home
           </Navbar.Link>
+          
           <Navbar.Link
             as={Link}
             to="/features"
@@ -375,6 +376,7 @@ export function Component() {
           >
             Features
           </Navbar.Link>
+{/*           
           <Navbar.Link
             href="/contact"
             className={
@@ -382,7 +384,18 @@ export function Component() {
             }
           >
             Contact
+          </Navbar.Link> */}
+           <Navbar.Link
+            as={Link}
+            to="/contact"
+            className={
+              location.pathname === "/contact" ? "text-indigo-600" : ""
+            }
+          >
+            Contact
           </Navbar.Link>
+          
+          
           <Navbar.Link>
             <button
               onClick={handleLoginClick}
